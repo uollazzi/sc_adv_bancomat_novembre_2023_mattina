@@ -1,0 +1,15 @@
+<h3>Deposito Contante</h3>
+<form (ngSubmit)="deposita()">
+  <div class="mb-3">
+    <label for="importo" class="form-label">Importo</label>
+    <input
+      [(ngModel)]="importo"
+      type="number"
+      class="form-control"
+      id="importo"
+      name="importo"
+    />
+  </div>
+  <button class="btn btn-primary">Deposita</button>
+</form>
+<div>{{ message }}</div>
