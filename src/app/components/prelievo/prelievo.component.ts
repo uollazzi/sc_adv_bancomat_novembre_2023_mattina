@@ -13,7 +13,7 @@ export class PrelievoComponent {
   constructor(private bs: BancomatService) { }
 
   preleva() {
-    this.message = this.bs.preleva(this.importo);
+    this.bs.preleva(this.importo);
     this.importo = 0;
   }
 }

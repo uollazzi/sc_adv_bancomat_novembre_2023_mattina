@@ -15,7 +15,7 @@ export class ContanteComponent {
   }
 
   deposita() {
-    this.message = this.bs.deposita(this.importo);
+    this.bs.deposita(this.importo);
     this.importo = 0;
   }
 }
