@@ -15,7 +15,10 @@ export class ContanteComponent {
   }
 
   deposita() {
-    this.bs.deposita(this.importo);
-    this.importo = 0;
+    this.bs.deposita(this.importo).subscribe(conto => {
+      console.log(conto);
+      this.importo = 0;
+    });
+
   }
 }
